@@ -1,0 +1,175 @@
+Delivered-To: sumit13rocks@gmail.com
+Received: by 2002:a05:651c:20dc:20b0:32c:c41b:7596 with SMTP id k28-n2csp38006ljc;
+        Tue, 24 Jun 2025 08:42:13 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHWsU792ZyfeRfR2kMOSM9wPoGX2JFBBJrzZmSwV4t7OISrLmwhD2ZgvKNuRVLoXUSMtD8X
+X-Received: by 2002:a05:620a:a492:b0:7d4:2868:89ea with SMTP id af79cd13be357-7d428688a16mr56570885a.4.1750779733401;
+        Tue, 24 Jun 2025 08:42:13 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750779733; cv=none;
+        d=google.com; s=arc-20240605;
+        b=BiOAn1Rhcrv8g6WpY4O6cgW+28cgVgaAYctcSz9OTh01RT9/JXjQZLdKajTGfFhU2D
+         MvhQ4tiY1O8d8pVKMq17giEImmaVtqEhDcb1q6tJdFgkB3AGAXiiqFMNTZQprDO448Et
+         P382Ugq6ULJRVSv4GdVO28MOwQkDrOlVGTN3ihkfTihNL/givvsrOQv4qvQ/xFSxC/FV
+         g/cKLZmBWczHovEo5VblGwAydC+ohE7bUxYYgMITz3z/wLmK0YtDDIEjfvYoomfkR/Mj
+         Bfyt8DKTmTctGWCWzhCvtaouQBEiMgYpAnLKS90zEWoMbMSCNenjgWB0t9yVweb/qwPX
+         LEpw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:feedback-id:list-unsubscribe-post:list-unsubscribe
+         :reply-to:to:from:subject:message-id:date:dkim-signature;
+        bh=I+m3JmNfDhYFIrBtU/P6dF26kAHA5xp9S2DdfH7LUL0=;
+        fh=+P1DAMsqNaMEIFvrXdETuBL8aj6EdGYJ/SpnUpPw8TA=;
+        b=Y4jhCnWW7rvq5Da/PyJC2UMiRmNkdCH63U1aeD/jQNoGGjj7unClnyVirxWU8keL1k
+         gnn/61zjdR1s4My5Hj7QSyLBpZ7IecDprxy5bC0JKWN1XkQzF5vTa9/5Q9SWVaV4ni4Z
+         fmNVozd6SXvz19LqLKLp5YoJsqmH87TgzM1uUWOqhPRUB4uiUu7vZ9BS2uECCwwJmkAu
+         dAwn76ZBOyh5231Z8qtpuOlEbzxkh+6KrzaCoW++uK1JHdIn092M+4x2frzIcDXcmsHA
+         k+ZKQSsvi/8JGhDLzCa4+/ktDdOedLVOE96o2ZkoAOuP2tXzMNINdeHMSRvTxaUzX4Hk
+         2LLg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@sportzcontests.com header.s=k1 header.b=SutVx8C6;
+       spf=pass (google.com: domain of bounce.cli1472-1269510-1269510-2264304085-2079-9484-29453-66-p1576@mc.sportzcontests.com designates 103.197.16.178 as permitted sender) smtp.mailfrom=bounce.cli1472-1269510-1269510-2264304085-2079-9484-29453-66-p1576@mc.sportzcontests.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=sportzcontests.com
+Return-Path: <bounce.cli1472-1269510-1269510-2264304085-2079-9484-29453-66-p1576@mc.sportzcontests.com>
+Received: from mail1.sportzcontests.com (mail1.sportzcontests.com. [103.197.16.178])
+        by mx.google.com with ESMTPS id af79cd13be357-7d3f99a022dsi1017460885a.7.2025.06.24.08.42.13
+        for <sumit13rocks@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-CHACHA20-POLY1305 bits=256/256);
+        Tue, 24 Jun 2025 08:42:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce.cli1472-1269510-1269510-2264304085-2079-9484-29453-66-p1576@mc.sportzcontests.com designates 103.197.16.178 as permitted sender) client-ip=103.197.16.178;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@sportzcontests.com header.s=k1 header.b=SutVx8C6;
+       spf=pass (google.com: domain of bounce.cli1472-1269510-1269510-2264304085-2079-9484-29453-66-p1576@mc.sportzcontests.com designates 103.197.16.178 as permitted sender) smtp.mailfrom=bounce.cli1472-1269510-1269510-2264304085-2079-9484-29453-66-p1576@mc.sportzcontests.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=sportzcontests.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; s=k1; d=sportzcontests.com; t=1750779732; h=subject:from:to; bh=I+m3JmNfDhYFIrBtU/P6dF26kAHA5xp9S2DdfH7LUL0=; b=SutVx8C6udQ+QYUcjqVSsY/zueXkJAYykY9xbco3sb4W2+shhMXJ7migoWJRBtSeJ6boOz XCyxTxS8L6bdIJfqKpwL9edOGScTmwThJdGoZw7mCoM4nMx0W/Wmkl95C6aqGH1oVk8Pu8 E4GLdQL3gUHdjGlyGJ8yzJuyj+jqvxYhydApuSfOdT8yH8Se5nMuPDmBO0UxxFJx1xO4vb SYzLSAwwvJZvNvwvbvdr/v7sZv4woxG9Ss4vt/2OSbJQPVgQb7TU0a6lm40oN2uK/OGHvl CwgCUpcngFMztpM3UaoSO6cpmARfCDWczYhVwNku5KnIwUc2YN1AyDc0N2vYvw==
+Date: Tue, 24 Jun 2025 15:42:12 +0000
+Message-ID: <1750779732-MjI2NDMwNDA4NS0xMjY5NTEw@mc.sportzcontests.com>
+Subject: "Reminder: Your Appointment is Today! 🗓️ sumit13rocks@gmail.com"
+From: Renault India <info@sportzcontests.com>
+To: sumit13rocks@gmail.com
+Reply-To: info@sportzcontests.com
+List-Unsubscribe: <https://mc.sportzcontests.com/us/kVxClSvAilKCWjFKaMsSgvuAeAYFMbsGzfBAMCaHzMCjefDMIfsYPbMBfXG>, <mailto:unsub.cli1472-1269510-1269510-2264304085-2079-9484-29453-66-p1576@mc.sportzcontests.com?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-campaignid: 1269510
+X-SentFromServer: 103.197.16.178
+X-Subscriber-ID: 2264304085
+Feedback-ID: 22221:2264304085:1472:sportzcont
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=f3df1f8da532478741327e37c856a3b433732696e143be01c2d3bb5fd54c
+
+--f3df1f8da532478741327e37c856a3b433732696e143be01c2d3bb5fd54c
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+No preview available
+--f3df1f8da532478741327e37c856a3b433732696e143be01c2d3bb5fd54c
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+  <head>
+    <title>"Reminder: Your Appointment is Today! =F0=9F=97=93=EF=B8=8F sumi=
+t13rocks@gmail.com"</title>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+" />
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0"/>
+    <style type=3D"text/css">
+      #outlook a {
+          padding: 0;
+      }
+      body {
+          width: 100% !important;
+          -webkit-text-size-adjust: none;
+          margin: 0;
+          padding: 0;
+      }
+      img {
+          border: none;
+          font-size: 14px;
+          height: auto;
+          line-height: 100%;
+          outline: none;
+          text-decoration: none;
+      }
+      .preheader {
+          display: none !important;
+      }
+     =20
+    </style>
+  </head>
+  <body>
+   =20
+   =20
+    <p>
+    <a style=3D"color:#000;text-decoration:none;" target=3D"_blank" rel=3D"=
+noopener noreferrer nofollow"  href=3D"https://mc.sportzcontests.com/links/=
+kVxClSvAilKCWjFKaMsSgvuAeAYFMbsGzfBAMCaHzMCjefDMIfsYPbMBfXG/2525089"><span =
+style=3D"font-size:18px;">Hi Sumit Tadavi,</span></a>
+</p>
+<p>
+    <a style=3D"color:#000;text-decoration:none;" target=3D"_blank" rel=3D"=
+noopener noreferrer nofollow"  href=3D"https://mc.sportzcontests.com/links/=
+kVxClSvAilKCWjFKaMsSgvuAeAYFMbsGzfBAMCaHzMCjefDMIfsYPbMBfXG/2525090"><span =
+style=3D"font-size:18px;">Neha this Side!</span></a>
+</p>
+<p>
+    <a style=3D"color:#000;text-decoration:none;" target=3D"_blank" rel=3D"=
+noopener noreferrer nofollow"  href=3D"https://mc.sportzcontests.com/links/=
+kVxClSvAilKCWjFKaMsSgvuAeAYFMbsGzfBAMCaHzMCjefDMIfsYPbMBfXG/2525091"><span =
+style=3D"font-size:18px;">Please click Here to complete your Application at=
+ the earliest in</span></a><br>
+    <a style=3D"color:#000;text-decoration:none;" target=3D"_blank" rel=3D"=
+noopener noreferrer nofollow"  href=3D"https://mc.sportzcontests.com/links/=
+kVxClSvAilKCWjFKaMsSgvuAeAYFMbsGzfBAMCaHzMCjefDMIfsYPbMBfXG/2525092"><span =
+style=3D"font-size:18px;">just a few minutes.</span></a>
+</p>
+<p>
+    <a style=3D"color:#000;text-decoration:none;" target=3D"_blank" rel=3D"=
+noopener noreferrer nofollow"  href=3D"https://mc.sportzcontests.com/links/=
+kVxClSvAilKCWjFKaMsSgvuAeAYFMbsGzfBAMCaHzMCjefDMIfsYPbMBfXG/2525093"><span =
+style=3D"font-size:18px;">Please contact me at the earliest.</span></a>
+</p>
+<p>
+    <a style=3D"color:#000;text-decoration:none;" target=3D"_blank" rel=3D"=
+noopener noreferrer nofollow"  href=3D"https://mc.sportzcontests.com/links/=
+kVxClSvAilKCWjFKaMsSgvuAeAYFMbsGzfBAMCaHzMCjefDMIfsYPbMBfXG/2525094"><span =
+style=3D"color:#4a148c;font-size:18px;"><strong><u>Click Here To Contact</u=
+></strong></span></a>
+</p>
+<p>
+    <a style=3D"color:#000;text-decoration:none;" target=3D"_blank" rel=3D"=
+noopener noreferrer nofollow"  href=3D"https://mc.sportzcontests.com/links/=
+kVxClSvAilKCWjFKaMsSgvuAeAYFMbsGzfBAMCaHzMCjefDMIfsYPbMBfXG/2525095"><span =
+style=3D"font-size:18px;">Regards,</span></a><br>
+    <a style=3D"color:#000;text-decoration:none;" target=3D"_blank" rel=3D"=
+noopener noreferrer nofollow"  href=3D"https://mc.sportzcontests.com/links/=
+kVxClSvAilKCWjFKaMsSgvuAeAYFMbsGzfBAMCaHzMCjefDMIfsYPbMBfXG/2525096"><span =
+style=3D"font-size:18px;">Neha</span></a><br>
+    <a style=3D"color:#000;text-decoration:none;" target=3D"_blank" rel=3D"=
+noopener noreferrer nofollow"  href=3D"https://mc.sportzcontests.com/links/=
+kVxClSvAilKCWjFKaMsSgvuAeAYFMbsGzfBAMCaHzMCjefDMIfsYPbMBfXG/2525097"><span =
+style=3D"font-size:18px;">9778X4XXXX</span></a>
+</p>
+    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" =
+style=3D"font-family:arial,sans-serif; font-size:12px; color:#888888; margi=
+n: 20px 0; width: 100%; text-align:center;">
+      <tr><td style=3D"line-height: 25px;"><p>If you&#39;ve decided to opt-=
+out of our emails, <a target=3D"_blank" href=3D"https://mc.sportzcontests.c=
+om/un/kVxClSvAilKCWjFKaMsSgvuAeAYFMbsGzfBAMCaHzMCjefDMIfsYPbMBfXG">click he=
+re</a></p></td></tr>
+     =20
+     =20
+     =20
+     =20
+    </table>
+    <span style=3D"display:none !important;" class=3D"preheader"><img src=
+=3D"https://mc.sportzcontests.com/opens/kVxClSvAilKCWjFKaMsSgvuAeAYFMbsGzfB=
+AMCaHzMCjefDMIfsYPbMBfXG/blank.gif" alt=3D"open track" width=3D"0" height=
+=3D"0" style=3D"display:none !important;" /></span><div style=3D"display:no=
+ne"><a href=3D"https://mc.sportzcontests.com/a/BExsMBCgZFKalSCWeUAEaIF" sty=
+le=3D"display:none !important;">.</a></div>
+  </body>
+</html>
+
+--f3df1f8da532478741327e37c856a3b433732696e143be01c2d3bb5fd54c--
